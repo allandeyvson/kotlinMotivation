@@ -7,4 +7,61 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
+
+    <LinearLayout android:id="@+id/LinearMenu"
+                  android:layout_width="0dp"
+                  android:layout_height="60dp"
+                  android:orientation="horizontal"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintRight_toRightOf="parent"
+                  tools:ignore="MissingConstraints">
+
+        <ImageView android:id="@+id/imgAll"
+                   android:layout_width="0dp"
+                   android:layout_height="35dp"
+                   android:layout_gravity="center_vertical"
+                   android:src="@drawable/ic_all_unselected"
+                   android:layout_weight="1"
+        />
+
+        <ImageView android:id="@+id/imgSun"
+                   android:layout_width="0dp"
+                   android:layout_height="35dp"
+                   android:layout_gravity="center_vertical"
+                   android:src="@drawable/ic_sun_unselected"
+                   android:layout_weight="1"
+        />
+
+        <ImageView android:id="@+id/imgHappy"
+                   android:layout_width="0dp"
+                   android:layout_height="35dp"
+                   android:layout_gravity="center_vertical"
+                   android:src="@drawable/ic_happy_unselected"
+                   android:layout_weight="1"
+        />
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/textUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/LinearMenu"
+            android:hint="Usuario:"
+            tools:ignore="MissingConstraints"/>
+    <TextView
+            android:id="@+id/textPhrase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textUser"
+            android:hint="Frase:"
+            tools:ignore="MissingConstraints"/>
+
+    <Button
+            android:id="@+id/buttonNewPrhase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textPhrase"
+            android:hint="Nova Frase"
+            tools:ignore="MissingConstraints"/>
+
 </android.support.constraint.ConstraintLayout>
