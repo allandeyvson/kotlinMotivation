@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".views.MainActivity">
 
 
     <LinearLayout android:id="@+id/LinearMenu"
@@ -20,24 +20,26 @@
                    android:layout_width="0dp"
                    android:layout_height="35dp"
                    android:layout_gravity="center_vertical"
-                   android:src="@drawable/ic_all_unselected"
                    android:layout_weight="1"
+                   app:srcCompat="@drawable/ic_all_unselected"
+
+
         />
 
-        <ImageView android:id="@+id/imgSun"
+        <ImageView android:id="@+id/imgPublic"
                    android:layout_width="0dp"
                    android:layout_height="35dp"
                    android:layout_gravity="center_vertical"
-                   android:src="@drawable/ic_sun_unselected"
                    android:layout_weight="1"
+                   app:srcCompat="@drawable/ic_public_unselected"
         />
 
         <ImageView android:id="@+id/imgHappy"
                    android:layout_width="0dp"
                    android:layout_height="35dp"
                    android:layout_gravity="center_vertical"
-                   android:src="@drawable/ic_happy_unselected"
                    android:layout_weight="1"
+                   app:srcCompat="@drawable/ic_happy_unselected"
         />
     </LinearLayout>
 
@@ -57,7 +59,7 @@
             tools:ignore="MissingConstraints"/>
 
     <Button
-            android:id="@+id/buttonNewPrhase"
+            android:id="@+id/btnNewPrhase"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/textPhrase"

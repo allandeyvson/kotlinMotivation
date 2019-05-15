@@ -10,10 +10,10 @@
                     android:supportsRtl="true"
                     android:theme="@style/AppTheme">
 
-                <activity android:name=".MainActivity" android:theme="@style/NoActionBar"/>
+                <activity android:name=".views.MainActivity" android:theme="@style/NoActionBar"/>
 
 
-                <activity android:name=".SplashActivity" android:theme="@style/CustomFullScreen">
+                <activity android:name=".views.SplashActivity" android:theme="@style/CustomFullScreen">
                     <intent-filter>
                         <action android:name="android.intent.action.MAIN"/>
 
